@@ -12,24 +12,18 @@ export function curry(fn) {
         }
 
         return (...nextArgs) => {
-            return curried.apply(this, combineArgs(args, nextArgs));
+            return curried.apply(this, combineArgs(relevantArgs, nextArgs));
         }
     }
 }
 
 function combineArgs(args = [], nextArgs = []) {
-    let argsIndex = 0;
-    let nextArgsIndex = 0;
+    const trueArgs = args.reduce((acc, arg) => {
+        const nextArg = arg === curry.placeholder && nextArgs.length ? nextArgs.shift() : arg;
+        return [...acc, nextArg];
+    }, []);
 
-    while (argsIndex < args.length) {
-        if (args[argsIndex] === curry.placeholder) {
-            args[argsIndex] = nextArgs[nextArgsIndex];
-            nextArgsIndex += 1;
-        }
-        argsIndex += 1;
-    }
-
-    return [...args, nextArgs.slice(nextArgsIndex)];
+    return [...trueArgs, ...nextArgs];
 }
 
 
