@@ -1,7 +1,7 @@
 /**
  * Complexity:
  * O(N) time
- * O(N) space
+ * O(H) space, where H is N in the worst case
  */
 
 /**
