@@ -2,7 +2,7 @@ import { lowestCommonAncestor } from './';
 import { constructBinaryTreeFromSerializedFormat } from './constructBinaryTreeFromSerializedFormat';
 
 // @TODO: Check tests
-test('236. Lowest Common Ancestor of a Binary Tree problem', () => {
+test.skip('236. Lowest Common Ancestor of a Binary Tree problem', () => {
     expect(
         lowestCommonAncestor(
             constructBinaryTreeFromSerializedFormat([
