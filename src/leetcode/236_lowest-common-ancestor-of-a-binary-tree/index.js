@@ -27,12 +27,9 @@ export const lowestCommonAncestor = (root, p, q) => {
         }
 
         return left || right || mid;
-    }
+    };
 
     lowestCommonAncestorHelper(root);
 
     return ans;
-}
-
-
-
+};

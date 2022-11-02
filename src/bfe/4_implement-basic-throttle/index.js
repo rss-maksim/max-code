@@ -7,7 +7,7 @@ export function throttle(func, wait) {
     let isDelayed = false;
     let relevantArgs = null;
 
-    return function(...args) {
+    return function (...args) {
         if (isDelayed) {
             relevantArgs = args;
         } else {
@@ -24,9 +24,9 @@ export function throttle(func, wait) {
                         checkForNewCalls();
                     }
                 }, wait);
-            }
+            };
 
             checkForNewCalls();
         }
-    }
+    };
 }

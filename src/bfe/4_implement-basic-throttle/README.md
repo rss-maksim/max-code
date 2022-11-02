@@ -20,29 +20,30 @@ After throttling at wait time of 3 dashes
 ─A─ ─ ─C─ ─ ─D ─ ─ ─ ─ E─ ─ ─G
 
 Be aware that
- - call A is triggered right way because not in waiting time
- - function call B is swallowed because B, C is in the cooling time from A, and C is latter.
+
+-   call A is triggered right way because not in waiting time
+-   function call B is swallowed because B, C is in the cooling time from A, and C is latter.
 
 Something like below will be used to do the test.
 
 ```js
-let currentTime = 0
+let currentTime = 0;
 
 const run = (input) => {
-    currentTime = 0
-    const calls = []
+    currentTime = 0;
+    const calls = [];
 
     const func = (arg) => {
-        calls.push(`${arg}@${currentTime}`)
-    }
+        calls.push(`${arg}@${currentTime}`);
+    };
 
-    const throttled = throttle(func, 3)
+    const throttled = throttle(func, 3);
     input.forEach((call) => {
-        const [arg, time] = call.split('@')
-        setTimeout(() => throttled(arg), time)
-    })
-    return calls
-}
+        const [arg, time] = call.split('@');
+        setTimeout(() => throttled(arg), time);
+    });
+    return calls;
+};
 
-expect(run(['A@0', 'B@2', 'C@3'])).toEqual(['A@0', 'C@3'])
+expect(run(['A@0', 'B@2', 'C@3'])).toEqual(['A@0', 'C@3']);
 ```

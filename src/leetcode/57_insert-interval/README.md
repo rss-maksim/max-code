@@ -11,13 +11,14 @@ Insert newInterval into intervals such that intervals is still sorted in ascendi
 Return intervals after the insertion.
 
 #### Example 1:
+
 ```
     Input: intervals = [[1,3],[6,9]], newInterval = [2,5]
     Output: [[1,5],[6,9]]
 ```
 
-
 #### Example 2:
+
 ```
     Input: intervals = [[1,2],[3,5],[6,7],[8,10],[12,16]], newInterval = [4,8]
     Output: [[1,2],[3,10],[12,16]]
@@ -25,9 +26,10 @@ Return intervals after the insertion.
 ```
 
 #### Constraints:
- - 0 <= intervals.length <= 104
- - intervals[i].length == 2
- - 0 <= starti <= endi <= 105
- - intervals is sorted by starti in ascending order.
- - newInterval.length == 2
- - 0 <= start <= end <= 105
+
+-   0 <= intervals.length <= 104
+-   intervals[i].length == 2
+-   0 <= starti <= endi <= 105
+-   intervals is sorted by starti in ascending order.
+-   newInterval.length == 2
+-   0 <= start <= end <= 105

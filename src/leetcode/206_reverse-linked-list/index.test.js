@@ -1,4 +1,4 @@
-import {ListNode, reverseList} from './';
+import { ListNode, reverseList } from './';
 
 function createLinkedListFromArray(list) {
     const preHead = new ListNode();
@@ -11,10 +11,15 @@ function createLinkedListFromArray(list) {
 }
 
 test('206. Reverse Linked List', () => {
+    expect(
+        reverseList(createLinkedListFromArray([1, 2, 3, 4, 5]))
+    ).toStrictEqual(createLinkedListFromArray([5, 4, 3, 2, 1]));
 
-    expect(reverseList(createLinkedListFromArray([1,2,3,4,5]))).toStrictEqual(createLinkedListFromArray([5,4,3,2,1]));
+    expect(reverseList(createLinkedListFromArray([1, 2]))).toStrictEqual(
+        createLinkedListFromArray([2, 1])
+    );
 
-    expect(reverseList(createLinkedListFromArray([1,2]))).toStrictEqual(createLinkedListFromArray([2,1]));
-
-    expect(reverseList(createLinkedListFromArray([]))).toStrictEqual(createLinkedListFromArray([]));
+    expect(reverseList(createLinkedListFromArray([]))).toStrictEqual(
+        createLinkedListFromArray([])
+    );
 });

@@ -18,4 +18,4 @@ export const maxSubArray = (nums) => {
     }
 
     return maxSum;
-}
+};

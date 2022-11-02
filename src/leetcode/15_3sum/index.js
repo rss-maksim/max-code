@@ -9,7 +9,7 @@
  * @return {number[][]}
  */
 export const threeSum = (nums) => {
-    nums.sort((a, b) => a -b);
+    nums.sort((a, b) => a - b);
 
     const output = [];
 
@@ -38,4 +38,4 @@ export const threeSum = (nums) => {
     }
 
     return output;
-}
+};

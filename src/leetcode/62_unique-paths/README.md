@@ -8,16 +8,17 @@ There is a robot on an m x n grid. The robot is initially located at the top-lef
 
 Given the two integers m and n, return the number of possible unique paths that the robot can take to reach the bottom-right corner.
 
-The test cases are generated so that the answer will be less than or equal to 2 * 109.
+The test cases are generated so that the answer will be less than or equal to 2 \* 109.
 
 #### Example 1:
+
 ```
 Input: m = 3, n = 7
 Output: 28
 ```
 
-
 #### Example 2:
+
 ```
 Input: m = 3, n = 2
 Output: 3
@@ -28,4 +29,5 @@ Explanation: From the top-left corner, there are a total of 3 ways to reach the 
 ```
 
 #### Constraints:
- - 1 <= m, n <= 100
+
+-   1 <= m, n <= 100

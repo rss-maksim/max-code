@@ -27,7 +27,7 @@ export const sortColors = (nums) => {
     }
 
     return nums;
-}
+};
 
 function swap(nums, left, right) {
     const temp = nums[left];

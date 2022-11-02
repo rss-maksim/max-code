@@ -13,6 +13,7 @@ You may assume that you have an infinite number of each kind of coin.
 The answer is guaranteed to fit into a signed 32-bit integer.
 
 #### Example 1:
+
 ```
     Input: amount = 5, coins = [1,2,5]
     Output: 4
@@ -23,8 +24,8 @@ The answer is guaranteed to fit into a signed 32-bit integer.
     5=1+1+1+1+1
 ```
 
-
 #### Example 2:
+
 ```
     Input: amount = 3, coins = [2]
     Output: 0
@@ -32,13 +33,15 @@ The answer is guaranteed to fit into a signed 32-bit integer.
 ```
 
 #### Example 3:
+
 ```
     Input: amount = 10, coins = [10]
     Output: 1
 ```
 
 #### Constraints:
- - 1 <= coins.length <= 300
- - 1 <= coins[i] <= 5000
- - All the values of coins are unique.
- - 0 <= amount <= 5000
+
+-   1 <= coins.length <= 300
+-   1 <= coins[i] <= 5000
+-   All the values of coins are unique.
+-   0 <= amount <= 5000

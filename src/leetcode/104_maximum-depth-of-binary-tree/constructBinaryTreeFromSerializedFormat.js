@@ -1,4 +1,4 @@
-import {TreeNode} from './TreeNode';
+import { TreeNode } from './TreeNode';
 
 /**
  * @param {array} serializedTree
@@ -26,4 +26,4 @@ export const constructBinaryTreeFromSerializedFormat = (serializedTree) => {
     }
 
     return root;
-}
+};

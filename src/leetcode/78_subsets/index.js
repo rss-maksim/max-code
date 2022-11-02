@@ -22,11 +22,11 @@ export const subsets = (nums) => {
             backtrack(k, i + 1, [...current]);
             current.pop();
         }
-    }
+    };
 
     for (let i = 0; i <= nums.length; i++) {
         backtrack(i, 0, []);
     }
 
     return output;
-}
+};

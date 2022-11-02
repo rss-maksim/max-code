@@ -10,20 +10,20 @@
  * @return {boolean}
  */
 export const canPartition = (nums) => {
-  const sum = nums.reduce((acc, num) => acc + num);
+    const sum = nums.reduce((acc, num) => acc + num);
 
-  if (sum % 2 !== 0) return false;
+    if (sum % 2 !== 0) return false;
 
-  const subSetSum = sum / 2;
+    const subSetSum = sum / 2;
 
-  const dp = new Array(subSetSum + 1).fill(false);
-  dp[0] = true;
+    const dp = new Array(subSetSum + 1).fill(false);
+    dp[0] = true;
 
-  for (const num of nums) {
-    for (let j = subSetSum; j >= num; j--) {
-      dp[j] = dp[j] || dp[j - num];
+    for (const num of nums) {
+        for (let j = subSetSum; j >= num; j--) {
+            dp[j] = dp[j] || dp[j - num];
+        }
     }
-  }
 
-  return dp[subSetSum];
+    return dp[subSetSum];
 };

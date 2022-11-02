@@ -12,5 +12,5 @@ The length of a path between two nodes is represented by the number of edges bet
 
 #### Constraints:
 
- - The number of nodes in the tree is in the range [1, 104].
- - -100 <= Node.val <= 100
+-   The number of nodes in the tree is in the range [1, 104].
+-   -100 <= Node.val <= 100

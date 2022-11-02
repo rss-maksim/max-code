@@ -13,7 +13,9 @@ export const updateMatrix = (matrix) => {
     if (rows === 0) return matrix;
 
     const cols = matrix[0].length;
-    const dist = Array.from({ length: rows }, () => Array.from({ length: cols }, () => Number.MAX_VALUE));
+    const dist = Array.from({ length: rows }, () =>
+        Array.from({ length: cols }, () => Number.MAX_VALUE)
+    );
 
     for (let i = 0; i < rows; i++) {
         for (let j = 0; j < cols; j++) {
@@ -42,4 +44,4 @@ export const updateMatrix = (matrix) => {
     }
 
     return dist;
-}
+};

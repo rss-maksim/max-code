@@ -38,4 +38,4 @@ export const cloneGraph = (node) => {
     }
 
     return visited.get(node);
-}
+};

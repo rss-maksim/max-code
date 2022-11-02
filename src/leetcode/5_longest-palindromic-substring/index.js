@@ -28,7 +28,7 @@ export const longestPalindrome = (s) => {
     }
 
     return s.substring(start, end + 1);
-}
+};
 
 function expandAroundCenter(left, right, str) {
     while (left >= 0 && right < str.length && str[left] === str[right]) {

@@ -19,12 +19,12 @@ export const reverseList = (head) => {
         currentNode = next;
     }
     return prev;
-}
+};
 
 /**
  * Definition for singly-linked list.
  */
 export function ListNode(val, next) {
-    this.val = (val === undefined ? 0 : val);
-    this.next = (next === undefined ? null : next);
+    this.val = val === undefined ? 0 : val;
+    this.next = next === undefined ? null : next;
 }

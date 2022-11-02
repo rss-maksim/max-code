@@ -13,12 +13,12 @@ Here is an example:
 ```js
 const arr = [1, [2], [3, [4]]];
 
-flat(arr)
+flat(arr);
 // [1, 2, 3, [4]]
 
-flat(arr, 1)
+flat(arr, 1);
 // [1, 2, 3, [4]]
 
-flat(arr, 2)
+flat(arr, 2);
 // [1, 2, 3, 4]
 ```

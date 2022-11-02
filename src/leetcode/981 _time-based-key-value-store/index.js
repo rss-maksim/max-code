@@ -13,12 +13,12 @@ export class TimeMap {
      * O(M*L) time
      * O(M*L) space
      */
-    /** 
-     * @param {string} key 
-     * @param {string} value 
+    /**
+     * @param {string} key
+     * @param {string} value
      * @param {number} timestamp
      * @return {void}
-    */
+     */
     set(key, value, timestamp) {
         if (!(key in this.timeMap)) {
             this.timeMap[key] = Array();

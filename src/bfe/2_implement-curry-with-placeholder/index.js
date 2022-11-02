@@ -13,18 +13,20 @@ export function curry(fn) {
 
         return (...nextArgs) => {
             return curried.apply(this, combineArgs(relevantArgs, nextArgs));
-        }
-    }
+        };
+    };
 }
 
 function combineArgs(args = [], nextArgs = []) {
     const trueArgs = args.reduce((acc, arg) => {
-        const nextArg = arg === curry.placeholder && nextArgs.length ? nextArgs.shift() : arg;
+        const nextArg =
+            arg === curry.placeholder && nextArgs.length
+                ? nextArgs.shift()
+                : arg;
         return [...acc, nextArg];
     }, []);
 
     return [...trueArgs, ...nextArgs];
 }
 
-
-curry.placeholder = Symbol()
+curry.placeholder = Symbol();

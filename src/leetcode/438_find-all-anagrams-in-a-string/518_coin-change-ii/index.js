@@ -42,4 +42,4 @@ export const findAnagrams = (s, p) => {
     }
 
     return result;
-}
+};

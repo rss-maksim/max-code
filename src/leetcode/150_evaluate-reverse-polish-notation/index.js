@@ -13,7 +13,7 @@ export const evalRPN = (tokens) => {
         '+': (a, b) => a + b,
         '-': (a, b) => a - b,
         '*': (a, b) => a * b,
-        '/': (a, b) => parseInt(a / b)
+        '/': (a, b) => parseInt(a / b),
     };
     const stack = [];
 
@@ -29,4 +29,4 @@ export const evalRPN = (tokens) => {
     }
 
     return stack.pop();
-}
+};

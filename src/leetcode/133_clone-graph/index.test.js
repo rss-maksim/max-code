@@ -2,7 +2,19 @@ import { cloneGraph } from './';
 
 // @TODO: Transform tests
 test('133. Clone Graph problem', () => {
-    expect(cloneGraph([[2,4],[1,3],[2,4],[1,3]])).toEqual([[2,4],[1,3],[2,4],[1,3]]);
+    expect(
+        cloneGraph([
+            [2, 4],
+            [1, 3],
+            [2, 4],
+            [1, 3],
+        ])
+    ).toEqual([
+        [2, 4],
+        [1, 3],
+        [2, 4],
+        [1, 3],
+    ]);
 
     expect(cloneGraph([[]])).toEqual([[]]);
 

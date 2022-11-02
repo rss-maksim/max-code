@@ -29,7 +29,7 @@ export const combinationSum = (candidates, target) => {
 
             combinations.pop();
         }
-    }
+    };
 
     backtrack(target, [], 0);
 

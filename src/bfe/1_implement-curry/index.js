@@ -9,6 +9,6 @@ export const curry = (fn) => {
         }
         return (...otherArgs) => {
             return curried.call(this, ...args, ...otherArgs);
-        }
-    }
-}
+        };
+    };
+};

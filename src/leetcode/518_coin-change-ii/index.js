@@ -21,4 +21,4 @@ export const change = (amount, coins) => {
         }
     }
     return dp[amount];
-}
+};

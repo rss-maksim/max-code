@@ -13,7 +13,10 @@ import { TreeNode } from './TreeNode';
  */
 export const buildTree = (preorder, inorder) => {
     let preorderIndex = 0;
-    const inorderMap = inorder.reduce((acc, value, index) => ({ ...acc, [value]: index }), {});
+    const inorderMap = inorder.reduce(
+        (acc, value, index) => ({ ...acc, [value]: index }),
+        {}
+    );
 
     const buildTreeHelper = (left, right) => {
         if (left > right) {
@@ -29,10 +32,7 @@ export const buildTree = (preorder, inorder) => {
         root.right = buildTreeHelper(inorderMap[rootValue] + 1, right);
 
         return root;
-    }
+    };
 
     return buildTreeHelper(0, preorder.length - 1);
-}
-
-
-
+};

@@ -22,4 +22,4 @@ export const constructBinaryTreeFromSerializedFormat = (serializedTree) => {
     }
 
     return root;
-}
+};

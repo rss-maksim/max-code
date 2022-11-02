@@ -22,4 +22,4 @@ export const coinChange = (coins, amount) => {
     }
 
     return dp[amount] !== Number.MAX_VALUE ? dp[amount] : -1;
-}
+};

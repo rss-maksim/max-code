@@ -26,12 +26,9 @@ export const rightSideView = (root) => {
         if (node.left) {
             rightSideViewHelper(node.left, level + 1);
         }
-    }
+    };
 
     rightSideViewHelper(root, 0);
 
     return rightSide;
-}
-
-
-
+};

@@ -12,7 +12,7 @@ export const spiralOrder = (matrix) => {
     let startCol = 0;
     let endCol = matrix[0].length - 1;
     let startRow = 0;
-    let endRow = matrix.length - 1
+    let endRow = matrix.length - 1;
     const result = [];
 
     while (startCol <= endCol && startRow <= endRow) {
@@ -45,4 +45,4 @@ export const spiralOrder = (matrix) => {
     }
 
     return result;
-}
+};

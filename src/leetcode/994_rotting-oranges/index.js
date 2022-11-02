@@ -69,4 +69,4 @@ export const orangesRotting = (grid) => {
     }
 
     return fresh === 0 ? minMinutes : -1;
-}
+};

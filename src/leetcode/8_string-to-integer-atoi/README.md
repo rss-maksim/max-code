@@ -21,6 +21,7 @@ Only the space character ' ' is considered a whitespace character.
 Do not ignore any characters other than the leading whitespace or the rest of the string after the digits.
 
 #### Example 1:
+
 ```
 Input: s = "42"
 Output: 42
@@ -35,8 +36,8 @@ The parsed integer is 42.
 Since 42 is in the range [-231, 231 - 1], the final result is 42.
 ```
 
-
 #### Example 2:
+
 ```
 Input: s = "   -42"
 Output: -42
@@ -52,6 +53,7 @@ Since -42 is in the range [-231, 231 - 1], the final result is -42.
 ```
 
 #### Example 3:
+
 ```
 Input: s = "4193 with words"
 Output: 4193
@@ -67,5 +69,6 @@ Since 4193 is in the range [-231, 231 - 1], the final result is 4193.
 ```
 
 #### Constraints:
- - 0 <= s.length <= 200
- - s consists of English letters (lower-case and upper-case), digits (0-9), ' ', '+', '-', and '.'.
+
+-   0 <= s.length <= 200
+-   s consists of English letters (lower-case and upper-case), digits (0-9), ' ', '+', '-', and '.'.

@@ -30,4 +30,4 @@ export const addBinary = (a, b) => {
     }
 
     return sum;
-}
+};

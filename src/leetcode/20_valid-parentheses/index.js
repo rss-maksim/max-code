@@ -12,7 +12,7 @@ export const isValid = (s) => {
     const map = {
         '}': '{',
         ']': '[',
-        ')': '('
+        ')': '(',
     };
     const stack = [];
     const openBrackets = Object.values(map);
@@ -29,4 +29,4 @@ export const isValid = (s) => {
     }
 
     return stack.length === 0;
-}
+};

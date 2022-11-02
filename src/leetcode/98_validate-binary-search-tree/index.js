@@ -22,7 +22,4 @@ export const isValidBST = (root, min = -Infinity, max = Infinity) => {
     const isRightValid = isValidBST(root.right, root.val, max);
 
     return isLeftValid && isRightValid;
-}
-
-
-
+};

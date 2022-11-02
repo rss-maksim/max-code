@@ -9,21 +9,21 @@
  * @return {number}
  */
 export const maxArea = (height) => {
-  let left = 0;
-  let right = height.length - 1;
-  let maxArea = 0;
+    let left = 0;
+    let right = height.length - 1;
+    let maxArea = 0;
 
-  while (left < right) {
-    const area = Math.min(height[left], height[right]) * (right - left);
+    while (left < right) {
+        const area = Math.min(height[left], height[right]) * (right - left);
 
-    maxArea = Math.max(area, maxArea);
+        maxArea = Math.max(area, maxArea);
 
-    if (height[left] < height[right]) {
-        left += 1;
-    } else {
-        right -= 1;
+        if (height[left] < height[right]) {
+            left += 1;
+        } else {
+            right -= 1;
+        }
     }
-  }
 
-  return maxArea;
-}
+    return maxArea;
+};

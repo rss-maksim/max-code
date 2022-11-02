@@ -1,4 +1,4 @@
-import {TreeNode} from './TreeNode';
+import { TreeNode } from './TreeNode';
 
 /**
  * @param {array} serializedTree
@@ -6,17 +6,17 @@ import {TreeNode} from './TreeNode';
  */
 export const serializeTree = (root) => {
     const levels = [];
-    
+
     if (!root) return levels;
-    
+
     const q = [root];
     let level = 0;
-    
+
     while (q.length) {
         levels.push([]);
-        
+
         const len = q.length;
-        
+
         for (let i = 0; i < len; i++) {
             const node = q.shift();
             if (node) {
@@ -25,7 +25,7 @@ export const serializeTree = (root) => {
                 levels[level].push(null);
                 continue;
             }
-            
+
             if (node.left) {
                 q.push(node.left);
             } else {
@@ -37,8 +37,8 @@ export const serializeTree = (root) => {
                 q.push(null);
             }
         }
-        
+
         level += 1;
     }
     return levels.filter((level) => level.some(Boolean)).flat();
-}
+};

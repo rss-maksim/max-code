@@ -27,7 +27,7 @@ export const permute = (nums) => {
             nums[i] = nums[first];
             nums[first] = temp;
         }
-    }
+    };
 
     backtrack();
 

@@ -21,4 +21,4 @@ export const majorityElement = (nums) => {
     }
 
     return candidate;
-}
+};
